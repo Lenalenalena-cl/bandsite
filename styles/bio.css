@@ -133,3 +133,36 @@
   justify-content: space-around;
 
   }
+
+  .wrapper--footer {
+    width: 100%;
+    background: #323232;
+  }
+
+  .footer__content {
+    padding: 0;
+  }
+
+  .footer__contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0;
+  }
+
+  .footer__medias {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .footer__links{
+    margin-left: 1.5rem;
+  }
+
+  .footer__social{
+    display: flex;
+    justify-content: space-between;
+  }

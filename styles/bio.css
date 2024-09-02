@@ -75,9 +75,61 @@
        object-fit: cover;
     -o-object-position: bottom;
        object-position: bottom;
-    
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       width: 70%;
+       height: 30%;
   }
 
-  .about__title, .about__quote, .about__autor, .about__bio, .about__subtitle, .about__paragraph {
+  .about__title, .about__autor, .about__bio, .about__subtitle, .about__paragraph {
     padding: 0.5rem 0;
+  }
+
+  .about__quote{
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+  }
+
+  .about__bio{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+
+  .about__subtitle{
+    margin-bottom: 0;
+  }
+
+  .about__text{
+    display: flex;
+  }
+
+  .about__paragraph1{
+    padding-right: 0.7rem;
+  }
+
+  .about__paragraph2{
+    padding-left: 0.7rem;
+  }
+
+  .gallery__images-list{
+    padding:4px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .gallery__img {
+    padding: 0.5rem 0;
+    width: 30%;
+  }
+
+  .gallery__row{
+    display: flex;
+  justify-content: space-around;
+
   }

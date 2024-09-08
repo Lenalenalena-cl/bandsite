@@ -9,26 +9,22 @@
 </head>
 
 <body>
-    <header id="home" class="wrapper--header">
-        <nav class="navbar">
+    <header class="header">
+        <div class="header-wrapper">
 
-            <div class="navbar__logo">
-                <h1 class="navbar__title">
-                    <a class="navbar__link" href="index.html"><img class="navbar__img"
-                            src="./assets/logo/Logo-bandsite.svg" alt="bandsite logo"></a>
-                </h1>
-            </div>
-
-            <div class="navbar__pages">
-                <ul class="navbar__list">
-                    <li class="navbar__item navbar__item--active"><a class="navbar__link"
-                            href="index.html">Biography</a></li>
-                    <li class="navbar__item navbar__item--desactive"><a class="navbar__link"
-                            href="./pages/shows.html">Shows</a></li>
+            <a href="index.html">
+                <img class="header__logo" src="assets/logo/Logo-bandsite.svg" alt="Brandsite logo">
+            </a>
+  
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__item"><a href="#" class="header__link header__link--active">Biography</a></li>
+                    <li class="header__item"><a href="pages/shows.html" class="header__link">Shows</a></li>
                 </ul>
-            </div>
+            </nav>
+        </div>
 
-        </nav>
+
     </header>
 
     <section class="wrapper--hero">
@@ -117,6 +113,38 @@
                 </div>
                 </div>
             </section>
+        </section>
+
+        <!-- comment -->
+        <section class="comments">
+ 
+            <div class="comments-wrapper">
+                <h2 class="comments__title">Join the Conversation</h2>
+                <div class="comments__content-wrapper">
+                    <div class="comments__add-comment-wrapper"> 
+                       
+                            <img class="comments__avatar--img" src="assets/images/Mohan-muruge.jpg" alt="side headshot of a man named Mohan Muruge in front of a purple backdrop">
+    
+    
+                        <form class="form" action="submit" id="form" method="post">
+                            <label class="form__label" for="name">Name</label>
+                            <input class="form__input-name" type="text" name="name" id="name" placeholder="Enter your name">
+                            <label class="form__label" for="comment">Comment</label>
+                            <textarea class="form__input-comment" type="text" name="comment" id="comment" placeholder="Add a new comment"></textarea>
+                            <button class="form__btn" type="submit">Comment</button>
+    
+    
+                        </form>
+                    </div>
+    
+                        <div id="comments__list">
+                            <!-- Use Javascript to populate  -->
+                        </div>
+    
+                
+                </div>
+            </div>
+    
         </section>
 
         <!-- footer -->
@@ -212,6 +240,7 @@
         </footer>
 
     </main>
+    <script src="/scrtips/index-page.js"></script>
 </body>
 
 </html>

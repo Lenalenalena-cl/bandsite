@@ -41,7 +41,35 @@ class BandSiteApi {
             console.error('Unable to retrieve show information:', error);
         }
     };
+    async getShows() {
+        try {
+            const shows = await axios.get(`${this.baseURL}showdates?api_key=${this.apiKey}`);
+            return shows.data
+            
+        } catch(error) {
+            console.error('Unable to retrieve show information:', error);
+        }
+    };
 
+    async likeComment(id) {
+        try {
+            const response = await axios.put(`${this.baseURL}comments/${id}/like?api_key=${this.apiKey}`);
+            return response.data;
+
+        } catch (error) {
+            console.error('Unable to like comment:', error);
+        }
+    }
+
+    async deleteComment(id) {
+        try {
+            const response = await axios.delete(`${this.baseURL}comments/${id}?api_key=${this.apiKey}`);
+            return response.data;
+
+        } catch (error) {
+            console.error('Unable to delete comment:', error);
+        }
+    }
     
     
 }

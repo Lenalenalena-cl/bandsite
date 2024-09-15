@@ -77,6 +77,7 @@ function displayComment(comment) {
     deleteButton.classList.add('comments__btn-activity--delete');
 
     deleteButton.addEventListener('click', async () => {
+        console.log('button got clicked')
         try {
           await allComments.deleteComment(comment.id);
           renderComments();

@@ -107,7 +107,7 @@ function displayComment(comment) {
     commentsList.appendChild(commentItem);
 }
 
-const API_KEY = "aced6fe7-a479-48c6-b118-927bd8a40874"
+const API_KEY = "aced6fe7-a479-48c6-b118-927bd8a40874" // using postman to get this 
 const allComments = new BandSiteApi(API_KEY);
 console.log(allComments)
 

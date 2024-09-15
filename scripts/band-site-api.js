@@ -1,3 +1,4 @@
+
 class BandSiteApi {
     constructor(apiKey) {
         this.apiKey = apiKey;
@@ -22,6 +23,7 @@ class BandSiteApi {
     async getComments() {
         try {
             const response = await axios.get(`${this.baseURL}comments?api_key=${this.apiKey}`);
+            console.log(response)
             const comments = response.data.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
             return comments;
 

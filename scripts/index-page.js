@@ -1,4 +1,5 @@
-import BandSiteApi from './band-site-api';
+import BandSiteApi from './band-site-api.js';
+
 const commentsList = document.getElementById('comments__list');
 const commentForm = document.getElementById('form');
 const nameInput = document.getElementById('name');
@@ -105,8 +106,9 @@ function displayComment(comment) {
     commentsList.appendChild(commentItem);
 }
 
-const apiKey = "e72a5484-dff3-4315-ac2b-23edc696c942";
-const allComments = new BandSiteApi(apiKey);
+const API_KEY = "aced6fe7-a479-48c6-b118-927bd8a40874"
+const allComments = new BandSiteApi(API_KEY);
+console.log(allComments)
 
 async function submitComment(newComment) {
     try {
